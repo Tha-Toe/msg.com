@@ -1,0 +1,228 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.maincontainer {
+   max-width: 1024px;
+   margin: 0 auto;
+}
+
+.header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 100px;
+   align-items: center;
+   position: sticky;
+   top: 0;
+   border-bottom: 1px solid lightgray;
+   background-color: #FAFAFA;
+   opacity: 0.9;
+   z-index: 1;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+.titleheader {
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #F5F5F5;
+}
+
+.logocontainer {
+    width: 50px;
+    height: 50px;
+}
+
+.msgicon {   
+    width: 100%;
+}
+
+.left {
+    display:inline-block;
+    width:50%;
+}
+
+.inner {
+    width: 50%;
+}
+
+.menuitem {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.menuitem:hover {
+    border-bottom-style: solid;
+}
+
+.blocktag {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #F5F5F5;
+    height: 35px;
+    width:300px;
+    border-radius: 10px;
+    outline:none;
+    padding-left:10px;
+    padding-right:15px;
+    font-size: 16px;
+}
+.button {
+    background-color: #0a7cff;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    padding: 2px 20px 0px;
+    height: 35px;
+    font-size: 17px;
+    width: 100px;
+}
+.blocksmall {
+    margin: 10px 0px 20px;
+}
+.right {
+    display:inline-block;
+    width:50%;
+}
+
+
+.appstoreimage {
+   width: 50%;
+}
+
+.rightimage {
+    width: 70%;
+}
+
+.mobilemenucontainer {
+    display: none;
+}
+
+.humburgaSite {
+    display: none;
+}
+@media (max-width: 767px) {
+    .menucontainer {
+        display: none;
+    }
+
+    .mobilemenucontainer {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+
+    }
+    .mobileContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+    }
+    .line {
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        margin-bottom: 4px;
+        border-radius: 5px;
+    }
+    .line2, .line1, .line3, .humburgaListTag {
+        transition: all 0.5s ease;
+    }
+    .line2Opacity {
+        opacity: 0;
+    }
+    .line1PlusDeg {
+        transform: rotate(45deg) translate(0px, 11px);
+    }
+    .line3MinusDeg {
+        transform: rotate(-45deg) translate(0px,-11px);
+    }
+    
+    .left {
+        width: 100%;
+    }
+    .inner {
+        margin: 0 auto;
+        width: 64%;
+    }
+    .right {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    .humburgaSite {
+        display: none;
+        height: 100vh;
+        width: 100vw;
+        top: 80px;
+        left: 0px;
+        background-color: #fff;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: scroll;
+    }
+    .humburgaListTag {
+        font-size: 40px;
+    }
+    .humburgaList {
+        margin-bottom: 10px;
+        background-color: #D2D5DD;
+        padding: 15px 50px;
+        padding-left: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .humburgaListTagTransform {
+        transform: translateY( -20px);
+    }
+
+    .humburgaSiteOpacity {
+        display: inline;
+        position: absolute;
+        opacity: 1;
+    }
+    .mainContainerRemove {
+        display: none;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    .inner {
+       width: 95%;
+    }
+
+    .footer {
+        margin-top: 30px;
+        font-size: 20px;
+        padding:10px;
+    }
+}
